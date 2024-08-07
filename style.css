@@ -1,38 +1,58 @@
+:root {
+    --background-color: #121212;
+    --primary-color: #BB86FC;
+    --secondary-color: #03DAC6;
+    --text-color: #E1E1E1;
+    --text-secondary-color: #B3B3B3;
+    --header-footer-bg: #1F1B24;
+    --card-bg: #2A2A2A;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--header-footer-bg);
+    color: var(--text-color);
     padding: 1rem 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 0.5rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--primary-color);
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
 }
 
 main {
-    padding: 1rem;
+    padding: 2rem;
 }
 
 section {
@@ -40,17 +60,20 @@ section {
 }
 
 .project {
-    border: 1px solid #ccc;
+    background: var(--card-bg);
     padding: 1rem;
     margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 footer {
-    background: #333;
-    color: #fff;
+    background: var(--header-footer-bg);
+    color: var(--text-secondary-color);
     text-align: center;
     padding: 1rem 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
 }
