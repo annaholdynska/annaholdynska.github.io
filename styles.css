@@ -1,14 +1,14 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #001f3f; /* Granatowy */
+    background-color: #0a0a0a; /* Bardzo ciemny szary dla tła */
     color: #e0e0e0;
 }
 
 header {
-    background-color: #003366; /* Granatowy */
+    background-color: #1c1c1c; /* Ciemny granatowy */
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
 nav ul {
@@ -28,11 +28,12 @@ nav ul li a {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #004080; /* Jaśniejszy granatowy */
+    background-color: #2a2a2a; /* Jaśniejszy ciemny granatowy */
+    color: #f0f0f0; /* Jasny tekst na hover */
 }
 
 main {
@@ -42,13 +43,14 @@ main {
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: #003366; /* Granatowy */
+    background-color: #1c1c1c; /* Ciemny granatowy */
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
 }
 
 h1 {
     font-size: 2em;
+    color: #f0f0f0; /* Jasny tekst dla nagłówków */
 }
 
 p {
@@ -57,12 +59,13 @@ p {
 
 code {
     display: block;
-    padding: 10px;
-    background-color: #002244; /* Bardzo ciemny granatowy */
+    padding: 15px;
+    background-color: #0d0d0d; /* Bardzo ciemny szary */
     color: #c4e0ff; /* Jasnoniebieski */
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
     overflow-x: auto;
     white-space: pre;
     margin: 10px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
 }
