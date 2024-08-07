@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Mode Example</title>
+    <title>Ania Hołdyńska - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#cv">CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Welcome to Dark Mode</h1>
-            <p>This is a sample text to show how the dark mode looks with a navy blue theme.</p>
+        <section id="about">
+            <h1>O mnie</h1>
+            <p>Cześć! Nazywam się Ania Hołdyńska i jestem specjalistką ds. analityki danych z doświadczeniem w tworzeniu zaawansowanych modeli analitycznych oraz wizualizacji danych.</p>
+            <p>Ukończyłam studia magisterskie z zakresu analizy danych i statystyki na Uniwersytecie Warszawskim. Specjalizuję się w regresji logistycznej, analizie danych w Pythonie oraz tworzeniu dashboardów w Power BI.</p>
+            <p>Moje zainteresowania obejmują również uczenie maszynowe oraz sztuczną inteligencję, które stosuję w codziennej pracy.</p>
         </section>
-        <section>
-            <h1>Code Example</h1>
-            <code>
-                // Sample code block
-                function example() {
-                    console.log('Hello, world!');
-                }
-            </code>
+        <section id="projects">
+            <h1>Projekty</h1>
+            <ul>
+                <li>Model regresji logistycznej dla prognozowania ryzyka kredytowego.</li>
+                <li>Dashboard w Power BI do analizy danych sprzedażowych i prognozowania trendów.</li>
+                <li>Interaktywny raport analityczny w Pythonie z wykorzystaniem bibliotek pandas i matplotlib.</li>
+            </ul>
+        </section>
+        <section id="cv">
+            <h1>CV</h1>
+            <p>Pobierz moje CV w formacie PDF: <a href="cv.pdf" download>Pobierz CV</a></p>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2024 Ania Hołdyńska</p>
+    </footer>
 </body>
 </html>
