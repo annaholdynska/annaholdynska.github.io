@@ -1,2 +1,1 @@
-// Skrypt JavaScript dla dodatkowej funkcjonalności (opcjonalny)
-console.log('Hello, Anna Holdyńska!');
+// Tu możesz dodać dowolne skrypty JavaScript, które będą potrzebne.
