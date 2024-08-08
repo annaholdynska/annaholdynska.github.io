@@ -1,71 +1,76 @@
-/* styles.css */
+/* Kolory */
+:root {
+    --background-color: #121220;
+    --header-background: #22223B;
+    --section-background: #2A2A4A;
+    --button-background: #4A4E69;
+    --button-hover: #62678C;
+    --text-color: #F2E9E4;
+    --border-color: #ADA1AB;
+}
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+/* Resetowanie domyślnych stylów */
+body, h1, p, a {
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    padding: 1rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 1rem;
-}
-
-nav a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #009688;
-}
-
-main {
-    padding: 2rem;
-}
-
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    border-bottom: 2px solid #009688;
-    padding-bottom: 0.5rem;
-}
-
-footer {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    text-align: center;
+    background-color: var(--header-background);
     padding: 1rem;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: var(--button-background);
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--button-hover);
+}
+
+main {
+    margin-top: 80px; /* Przestrzeń dla headera */
+    padding: 2rem;
+}
+
+.section {
+    background-color: var(--section-background);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-color);
 }
