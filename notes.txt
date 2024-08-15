@@ -1,0 +1,24 @@
+Format tekstu:
+font-size: 36px; /* Rozmiar czcionki */
+font-weight: bold; /* Pogrubienie czcionki */
+color: #333; /* Kolor tekstu */
+background-color: #f5f5f5; /* Kolor tła */
+text-align: center; /* Wyśrodkowanie tekstu */
+padding: 20px; /* Padding wewnętrzny */
+border-radius: 10px; /* Zaokrąglone rogi */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Cień */
+margin: 20px; /* Margines dookoła nagłówka */  
+
+font-family: Arial;
+font-family: 'Century Gothic';
+font-family: 'Courier New';
+font-family: 'Copperplate Gothic Light';
+font-family: Georgia;
+font-family: Impact;
+font-family: 'Lucida Console';
+font-family: 'Lucida Sans Unicode';
+font-family: 'Palatino Linotype';
+font-family: Tahoma;
+font-family: 'Times New Roman';
+font-family: 'Trebuchet MS';
+font-family: Verdana;
