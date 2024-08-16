@@ -1,14 +1,17 @@
 
-body {
-    width: 100%;
+body, html {
+    height: 100vh;
     min-height: 100vh;
     background-color: #2a2a4a;
-    margin: 0; /* Usuń domyślne marginesy */
     padding: 0;
+    margin: 0;
     font-family: 'Lucida Sans Unicode';
 }
 
 .top-bar {
+    width: 90%;
+    min-width: 500px;
+    margin: auto;
     height: 80px; /* Wysokość kreski */
     background-color: #1d1d33;
     display: flex; /* Używamy Flexboxa do centrowania */
@@ -33,7 +36,8 @@ body {
     color: #fcfbfa;
     display: flex;
     gap: 40px; /* Odstęp między napisami */
-    margin-left: 300px;
+    margin-left: auto;
+    padding-right: 200px;
 }
 .links span {
     transition: color 0.3s ease;
@@ -46,3 +50,6 @@ body {
     cursor: pointer;
 }
 
+.anna-holdynska {
+    padding: 0 200px;
+}
