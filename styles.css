@@ -1,10 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body, html {
+    margin: 0;
     background-color: #2a2a4a;
     font-family: 'Lucida Sans Unicode';
 }
@@ -12,11 +7,12 @@ body, html {
 .top-bar {
     height: 80px; /* Wysokość kreski */
     background-color: #1d1d33;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Używamy Flexboxa do centrowania */
     align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-left: 30px;
     box-shadow: 0 4px 10px #5c6182;
-    padding: 0 20px;
 }
 
 .logo {
@@ -32,6 +28,9 @@ body, html {
 .links {
     font-size: 20px;
     color: #fcfbfa;
+    display: flex;
+    gap: 40px;
+
 }
 .links span {
     transition: color 0.3s ease;

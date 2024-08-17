@@ -1,3 +1,5 @@
+<p> - zwykły tekst
+
 Format tekstu:
 font-size: 36px; /* Rozmiar czcionki */
 font-weight: bold; /* Pogrubienie czcionki */
