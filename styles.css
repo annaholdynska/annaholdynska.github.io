@@ -1,6 +1,9 @@
 body, html {
     margin: 0;
-    font-family: 'Lucida Sans Unicode';
+    font-family: Montserrat;
+    letter-spacing: 0.4px;
+    line-height: 26px;
+    font-size: 17px;
     color: #fcfbfa;
 }
 
@@ -11,7 +14,7 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     height: 80px;
     background-color: #1d1d33;
     display: flex;
@@ -29,8 +32,8 @@ body, html {
 }
 
 .logo {
-    font-size: 27px; /* Rozmiar czcionki */
-    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 30px; /* Rozmiar czcionki */
     transition: color 0.3s ease;
 }
 .logo:hover {
@@ -58,7 +61,7 @@ body, html {
 
 .strona1-tlo {
     margin-top: 80px;
-    padding: 0 10px;
+    padding: 0 20px;
     height: 500px;
     background-color: #2a2a4a;
     display: flex;
@@ -95,6 +98,7 @@ body, html {
     display: flex;
     gap: 30px;
     color: #d6c0bc;
+    font-family: 'Times New Roman';
 }
 
 .email {
@@ -110,7 +114,7 @@ text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 /* ----------------------------strona2-------------------------------------------- */
 
 .strona2-tlo {
-    padding: 0 10px;
+    padding: 0 20px;
     height: 500px;
     background-color: #22223b;
     display: flex;
