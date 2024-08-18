@@ -1,6 +1,5 @@
 body, html {
     margin: 0;
-    background-color: #2a2a4a;
     font-family: 'Lucida Sans Unicode';
     color: #fcfbfa;
 }
@@ -8,6 +7,7 @@ body, html {
 /* ----------------------------górny-pasek-------------------------------------------- */
 
 .top-bar {
+    padding: 0 10px;
     height: 80px;
     background-color: #1d1d33;
     display: flex;
@@ -49,22 +49,29 @@ body, html {
     cursor: pointer;
 }
 
-/* ----------------------------wszystko-------------------------------------------- */
-
-.wszystko {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
 /* ----------------------------strona1-------------------------------------------- */
 
-.strona1 {
+.strona1-tlo {
+    padding: 0 10px;
+    height: 500px;
+    background-color: #2a2a4a;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.strona1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    width: 100%;
     gap: 100px;
 }
 
-.tekst-wprowadzenie {
+.strona1-tekst {
+    display: flex;
+    flex-direction: column;
     flex: 1;
 }
 
@@ -77,5 +84,25 @@ body, html {
     border: 3px solid #d6c0bc;
 }
 
+.kontakt {
+    display: flex;
+    gap: 30px;
+    color: #d6c0bc;
+}
+
+.email {
+    color: #d6c0bc;
+    text-decoration: none; /* Usuwa podkreślenie */
+  }
+  
+.email:hover {
+text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
+}
+  
+
 /* ----------------------------strona2-------------------------------------------- */
 
+.strona2 {
+    padding: 0 10px;
+    background-color: #22223b;
+}
