@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     background-color: #2a2a4a;
     font-family: 'Lucida Sans Unicode';
+    color: #fcfbfa; /* Kolor tekstu */
 }
 
 .top-bar {
@@ -10,15 +11,14 @@ body, html {
     display: flex; /* Używamy Flexboxa do centrowania */
     align-items: center; /* Wyśrodkowanie w pionie */
     justify-content: space-between;
-    padding-right: 200px;
-    padding-left: 30px;
+    padding-left: 40px;
+    padding-right: 250px;
     box-shadow: 0 4px 10px #5c6182;
 }
 
 .logo {
     font-size: 27px; /* Rozmiar czcionki */
     font-weight: 600;
-    color: #fcfbfa; /* Kolor tekstu */
     transition: color 0.3s ease;
 }
 .logo:hover {
@@ -30,7 +30,6 @@ body, html {
     color: #fcfbfa;
     display: flex;
     gap: 40px;
-
 }
 .links span {
     transition: color 0.3s ease;
@@ -42,3 +41,30 @@ body, html {
 .logo, .links span {
     cursor: pointer;
 }
+
+/* ----------------------------strona1-------------------------------------------- */
+
+.strona1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.tekst-wprowadzenie {
+    flex: 1;
+}
+
+.profilowe {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    border: 3px solid #d6c0bc;
+}
+
+/* ----------------------------strona2-------------------------------------------- */
+
