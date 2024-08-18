@@ -2,18 +2,25 @@ body, html {
     margin: 0;
     background-color: #2a2a4a;
     font-family: 'Lucida Sans Unicode';
-    color: #fcfbfa; /* Kolor tekstu */
+    color: #fcfbfa;
 }
 
+/* ----------------------------górny-pasek-------------------------------------------- */
+
 .top-bar {
-    height: 80px; /* Wysokość kreski */
+    height: 80px;
     background-color: #1d1d33;
-    display: flex; /* Używamy Flexboxa do centrowania */
-    align-items: center; /* Wyśrodkowanie w pionie */
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 0 4px 10px #5c6182;
+}
+.top-bar-tekst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    width: 100%;
 }
 
 .logo {
@@ -42,12 +49,16 @@ body, html {
     cursor: pointer;
 }
 
+/* ----------------------------wszystko-------------------------------------------- */
+
+.wszystko {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 /* ----------------------------strona1-------------------------------------------- */
 
 .strona1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
     display: flex;
     align-items: center;
     gap: 100px;
