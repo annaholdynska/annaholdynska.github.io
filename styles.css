@@ -109,7 +109,20 @@ text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 
 /* ----------------------------strona2-------------------------------------------- */
 
-.strona2 {
+.strona2-tlo {
     padding: 0 10px;
+    height: 500px;
     background-color: #22223b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.strona2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    width: 100%;
+    gap: 100px;
 }
