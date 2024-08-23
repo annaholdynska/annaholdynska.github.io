@@ -1,10 +1,30 @@
+:root {
+    --color1: #1d1d33;
+    --color2: #22223b;
+    --color3: #2a2a4a;
+    --color4: #4a4e69;
+    --color5: #5c6182;
+    --color6: #9a8c98;
+    --color7: #ada1ab;
+    --color8: #c9ada7;
+    --color9: #d6c0bc;
+    --color10: #f2e9e4;
+    --color11: #f7f3f0;
+    --color12: #fcfbfa;
+    --max-width: 1250px;
+    --padding-20: 0 20px;
+    --height-page: 500px;
+    --width-page: 100%;
+}
+
+
 body, html {
     margin: 0;
     font-family: Montserrat;
     letter-spacing: 0.4px;
     line-height: 27px;
     font-size: 17px;
-    color: #fcfbfa;
+    color: var(--color12);
 }
 
 /* ----------------------------górny-pasek-------------------------------------------- */
@@ -14,21 +34,21 @@ body, html {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0 20px;
+    padding: var(--padding-20);
     height: 80px;
-    background-color: #1d1d33;
+    background-color: var(--color1);
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px #5c6182;
+    box-shadow: 0 4px 10px var(--color5);
     z-index: 1000;
 }
 .top-bar-tekst {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1250px;
-    width: 100%;
+    max-width: var(--max-width);
+    width: var(--width-page);
 }
 
 .logo {
@@ -36,12 +56,12 @@ body, html {
     transition: color 0.3s ease;
 }
 .logo:hover {
-    color: #9a8c98; /* Kolor tekstu podczas najeżdżania */
+    color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 
 .links {
     font-size: 20px;
-    color: #fcfbfa;
+    color: var(--color12);
     display: flex;
     gap: 40px;
 }
@@ -49,7 +69,7 @@ body, html {
     transition: color 0.3s ease;
 }
 .links span:hover {
-    color: #9a8c98; /* Kolor tekstu podczas najeżdżania */
+    color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 /* fajne to */
 .logo, .links span {
@@ -60,9 +80,9 @@ body, html {
 
 .strona1-tlo {
     margin-top: 80px;
-    padding: 0 20px;
-    height: 500px;
-    background-color: #2a2a4a;
+    padding: var(--padding-20);
+    height: var(--height-page);
+    background-color: var(--color3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,8 +92,8 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1250px;
-    width: 100%;
+    max-width: var(--max-width);
+    width: var(--width-page);
     gap: 100px;
 }
 
@@ -89,19 +109,19 @@ body, html {
     border-radius: 50%;
     object-fit: cover;
     object-position: center 30%;
-    border: 5px solid #d6c0bc;
-    box-shadow: 0 4px 10px #5c6182;
+    border: 5px solid var(--color9);
+    box-shadow: 0 4px 10px var(--color5);
 }
 
 .kontakt {
     display: flex;
     gap: 30px;
-    color: #d6c0bc;
+    color: var(--color9);
     font-family: 'Times New Roman';
 }
 
 .email {
-    color: #d6c0bc;
+    color: var(--color9);
     text-decoration: none; /* Usuwa podkreślenie */
   }
   
@@ -113,9 +133,9 @@ text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 /* ----------------------------strona2-------------------------------------------- */
 
 .strona2-tlo {
-    padding: 0 20px;
-    height: 500px;
-    background-color: #22223b;
+    padding: var(--padding-20);
+    height: var(--height-page);
+    background-color: var(--color2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,7 +145,6 @@ text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1250px;
-    width: 100%;
-    gap: 100px;
+    max-width: var(--max-width);
+    width: var(--width-page);
 }
