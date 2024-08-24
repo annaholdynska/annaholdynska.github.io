@@ -13,8 +13,9 @@
     --color12: #fcfbfa;
     --max-width: 1250px;
     --padding-20: 0 20px;
-    --height-page: 500px;
     --width-page: 100%;
+    --padding-top: 10px;
+    --padding-bot: 30px;
 }
 
 
@@ -25,6 +26,12 @@ body, html {
     line-height: 27px;
     font-size: 17px;
     color: var(--color12);
+}
+
+/* ----------------------------GENERAL class-------------------------------------------- */
+
+.naglowek {
+    
 }
 
 /* ----------------------------górny-pasek-------------------------------------------- */
@@ -43,7 +50,7 @@ body, html {
     box-shadow: 0 4px 10px var(--color5);
     z-index: 1000;
 }
-.top-bar-tekst {
+.tb-tekst {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,28 +58,28 @@ body, html {
     width: var(--width-page);
 }
 
-.logo {
+.tb-logo {
     font-size: 30px; /* Rozmiar czcionki */
     transition: color 0.3s ease;
 }
-.logo:hover {
+.tb-logo:hover {
     color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 
-.links {
+.tb-links {
     font-size: 20px;
     color: var(--color12);
     display: flex;
     gap: 40px;
 }
-.links span {
+.tb-links span {
     transition: color 0.3s ease;
 }
-.links span:hover {
+.tb-links span:hover {
     color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 /* fajne to */
-.logo, .links span {
+.tb-logo, .tb-links span {
     cursor: pointer;
 }
 
@@ -81,7 +88,7 @@ body, html {
 .strona1-tlo {
     margin-top: 80px;
     padding: var(--padding-20);
-    height: var(--height-page);
+    height: 500px;
     background-color: var(--color3);
     display: flex;
     align-items: center;
@@ -97,35 +104,35 @@ body, html {
     gap: 100px;
 }
 
-.strona1-tekst {
+.s1-tekst {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.profilowe {
+.s1-profilowe {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     object-position: center 30%;
     border: 5px solid var(--color9);
-    box-shadow: 0 4px 10px var(--color5);
+    box-shadow: 4px 4px 10px var(--color5);
 }
 
-.kontakt {
+.s1-kontakt {
     display: flex;
     gap: 30px;
     color: var(--color9);
     font-family: 'Times New Roman';
 }
 
-.email {
+.s1-email {
     color: var(--color9);
     text-decoration: none; /* Usuwa podkreślenie */
   }
   
-.email:hover {
+.s1-email:hover {
 text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 }
   
@@ -134,17 +141,63 @@ text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 
 .strona2-tlo {
     padding: var(--padding-20);
-    height: var(--height-page);
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-bot);
+    height: max-content;
     background-color: var(--color2);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .strona2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     max-width: var(--max-width);
     width: var(--width-page);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
+
+.s2-doswiadczenie-calosc {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.s2-doswiadczenie-linia {
+    display: grid;
+    grid-template-columns: 200px 200px 1fr; /* to zmienić na jakieś auto */
+    position: relative;
+}
+
+
+.line {
+    border-left: 4px solid var(--color9);
+    height: 400px;
+    position: absolute;
+    top: 0;
+    grid-column: 2;
+    left: calc(100px - 3px); /* tak samo tu zmienić na auto */
+}
+
+.s2-data {
+    justify-content: end;
+}
+
+.s2-logo {
+    justify-self: center; /* Centrowanie logo w kolumnie */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--color9);
+    /* box-shadow: 0 3px 6px var(--color5); */
+    z-index: 1;
+}
+
+.s2-doswiadczenie-opis {
+    background-color: #2a2a4a;
+    padding: 10px 30px 10px 30px;
+}
+

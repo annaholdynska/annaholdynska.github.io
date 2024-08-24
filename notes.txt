@@ -1,5 +1,8 @@
 <p> - zwykły tekst
 
+justify-content - wyśrodkowuje w poziomie
+align-items - wyśrodkowuje w pionie
+
 Format tekstu:
 font-size: 36px; /* Rozmiar czcionki */
 font-weight: bold; /* Pogrubienie czcionki */
