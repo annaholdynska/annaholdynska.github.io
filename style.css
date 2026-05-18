@@ -17,16 +17,58 @@
   --color10: #f2e9e4;
   --color11: #f7f3f0;
   --color12: #fcfbfa;
+
+  --padding-mobile: 15px;
+  --padding-desktop: 20px;
+  --gap-mobile: 20px;
+  --gap-tablet: 40px;
+  --gap-desktop: 100px;
+  --max-width: 1250px;
+  --transition: 0.3s ease;
 }
 
 body,
 html {
-  margin: 0;
+  margin: 0; /* usuwa domyślne marginesy */
+  padding: 0;
   font-family: Montserrat;
   letter-spacing: 0.4px;
   line-height: 27px;
-  font-size: 17px;
+  font-size: clamp(16px, 2vw, 17px);
   color: var(--color12);
+}
+
+/* centruje elementy */
+.flex-center {
+  display: flex; /* włącza flexbox - zmienia układ na bardziej elastyczny */
+  justify-content: center; /* wyrównuje elementy w poziomie do środka */
+  align-items: center; /* wyrównuje elementy w pionie do środka */
+}
+
+/* rozkłada elementy max na boki */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* zazwyczaj flex robi w poziomie, to zamienia elementy na pion (układ pionowy)*/
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animacja zanikania/pokazywania */
+.transition {
+  transition: color var(--transition);
+}
+
+/* używamy container, żeby nie pisać wszędzie max-width i width */
+.container {
+  max-width: var(--max-width); /* Max 1250px */
+  width: 100%; /* 100% na małych ekranach */
+  padding: 0 var(--padding-mobile); /* Marginesy z lewej i prawej */
+  margin: 0 auto; /* Wyśrodkowanie */
 }
 
 /* ----------------------------górny-pasek-------------------------------------------- */
