@@ -11,11 +11,6 @@
   --color10: #f2e9e4;
   --color11: #f7f3f0;
   --color12: #fcfbfa;
-  --max-width: 1250px;
-  --padding-20: 0 20px;
-  --width-page: 100%;
-  --padding-top: 10px;
-  --padding-bot: 30px;
 }
 
 body,
@@ -35,7 +30,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  padding: var(--padding-20);
+  padding: 0 20px;
   height: 80px;
   background-color: var(--color1);
   display: flex;
@@ -48,8 +43,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--max-width);
-  width: var(--width-page);
+  max-width: 1250px;
+  width: 100%;
 }
 
 .tb-logo {
@@ -82,20 +77,19 @@ html {
 
 .strona1-tlo {
   margin-top: 80px;
-  padding: var(--padding-20);
+  padding: 0 20px;
   height: 500px;
   background-color: var(--color3);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .strona1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--max-width);
-  width: var(--width-page);
+  max-width: 1250px;
+  width: 100%;
   gap: 100px;
 }
 
@@ -134,9 +128,7 @@ html {
 /* ----------------------------strona2-------------------------------------------- */
 
 .strona2-tlo {
-  padding: var(--padding-20);
-  padding-top: var(--padding-top);
-  padding-bottom: var(--padding-bot);
+  padding: 10px 20px 30px;
   height: max-content;
   background-color: var(--color2);
   display: flex;
@@ -144,8 +136,8 @@ html {
   justify-content: center;
 }
 .strona2 {
-  max-width: var(--max-width);
-  width: var(--width-page);
+  max-width: 1250px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,10 +166,6 @@ html {
   left: calc(100px - 3px); /* tak samo tu zmienić na auto */
 }
 
-.s2-data {
-  justify-content: end;
-}
-
 .s2-logo {
   justify-self: center; /* Centrowanie logo w kolumnie */
   width: 100px;
@@ -190,6 +178,6 @@ html {
 }
 
 .s2-doswiadczenie-opis {
-  background-color: #2a2a4a;
+  background-color: var(--color3);
   padding: 10px 30px 10px 30px;
 }
