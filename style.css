@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+} /* lepiej używać, elementy się nie rozjeżdżają */
+
 :root {
   --color1: #1d1d33;
   --color2: #22223b;
