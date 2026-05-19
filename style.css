@@ -32,9 +32,9 @@ html {
   margin: 0; /* usuwa domyślne marginesy */
   padding: 0;
   font-family: Montserrat;
-  letter-spacing: 0.4px;
-  line-height: 27px;
-  font-size: clamp(16px, 2vw, 17px);
+  letter-spacing: 0.4px; /* zwiększa odstęp między literami */
+  line-height: 27px; /* zwiększa odstęp między wierszami */
+  font-size: 17px;
   color: var(--color12);
 }
 
@@ -63,7 +63,7 @@ html {
   transition: color var(--transition);
 }
 
-/* używamy container, żeby nie pisać wszędzie max-width i width */
+/* używamy container, żeby nie pisać wszędzie max-width i width - pytanie gdzie zastosować ten container */
 .container {
   max-width: var(--max-width); /* Max 1250px */
   width: 100%; /* 100% na małych ekranach */
@@ -73,52 +73,49 @@ html {
 
 /* ----------------------------górny-pasek-------------------------------------------- */
 
+/* ustawia cały górny pasek */
 .top-bar {
-  position: fixed;
+  position: fixed; /* Pasek jest przyklejony do góry */
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 20px;
   height: 80px;
   background-color: var(--color1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 4px 10px var(--color5);
-  z-index: 1000;
-}
-.tb-tekst {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1250px;
-  width: 100%;
+  z-index: 1000; /* zawsze na wierzchu */
+  padding: 0 var(--padding-mobile);
 }
 
-.tb-logo {
-  font-size: 30px; /* Rozmiar czcionki */
-  transition: color 0.3s ease;
-}
-.tb-logo:hover {
-  color: var(--color6); /* Kolor tekstu podczas najeżdżania */
+/* mówi jak elementy mają być ustawione wewnątrz paska */
+.top-container {
+  max-width: var(--max-width);
+  width: 100%; /* wypełnij 100% miejsca */
 }
 
-.tb-links {
-  font-size: 20px;
-  color: var(--color12);
+/* mówi jak ma wyglądać pierwszy element paska */
+.top-logo {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* mówi jak ma wyglądać drugi element paska */
+.top-links {
   display: flex;
   gap: 40px;
+  font-size: 20px;
+  color: var(--color12); /* Biały tekst */
 }
-.tb-links span {
-  transition: color 0.3s ease;
+
+.top-logo,
+.top-links span {
+  /* span jest potrzebny, bo chce stylizować pojedyncze elementy w środku */
+  cursor: pointer; /* zmiana kursora na wskazujący, sugerując, że element jest klikalny */
+  transition: color var(--transition); /* płynna zmiana koloru podczas najeżdżania */
 }
-.tb-links span:hover {
+
+.top-logo:hover,
+.top-links span:hover {
   color: var(--color6); /* Kolor tekstu podczas najeżdżania */
-}
-/* fajne to */
-.tb-logo,
-.tb-links span {
-  cursor: pointer;
 }
 
 /* ----------------------------strona1-------------------------------------------- */
