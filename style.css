@@ -18,11 +18,6 @@
   --color11: #f7f3f0;
   --color12: #fcfbfa;
 
-  --padding-mobile: 15px;
-  --padding-desktop: 20px;
-  --gap-mobile: 20px;
-  --gap-tablet: 40px;
-  --gap-desktop: 100px;
   --max-width: 1250px;
   --transition: 0.3s ease;
 }
@@ -67,11 +62,9 @@ html {
 .container {
   max-width: var(--max-width); /* Max 1250px */
   width: 100%; /* 100% na małych ekranach */
-  padding: 0 var(--padding-mobile); /* Marginesy z lewej i prawej */
-  margin: 0 auto; /* Wyśrodkowanie */
 }
 
-/* ----------------------------górny-pasek-------------------------------------------- */
+/* ----------------------------top-bar-------------------------------------------- */
 
 /* ustawia cały górny pasek */
 .top-bar {
@@ -83,13 +76,6 @@ html {
   background-color: var(--color1);
   box-shadow: 0 4px 10px var(--color5);
   z-index: 1000; /* zawsze na wierzchu */
-  padding: 0 var(--padding-mobile);
-}
-
-/* mówi jak elementy mają być ustawione wewnątrz paska */
-.top-container {
-  max-width: var(--max-width);
-  width: 100%; /* wypełnij 100% miejsca */
 }
 
 /* mówi jak ma wyglądać pierwszy element paska */
@@ -100,10 +86,8 @@ html {
 
 /* mówi jak ma wyglądać drugi element paska */
 .top-links {
-  display: flex;
   gap: 40px;
   font-size: 20px;
-  color: var(--color12); /* Biały tekst */
 }
 
 .top-logo,
@@ -118,30 +102,27 @@ html {
   color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 
-/* ----------------------------strona1-------------------------------------------- */
+/* ----------------------------strona1-omnie-------------------------------------------- */
 
-.strona1-tlo {
-  margin-top: 80px;
-  padding: 0 20px;
+.s1-tlo {
+  padding-top: 80px;
   height: 500px;
   background-color: var(--color3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.strona1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1250px;
-  width: 100%;
+
+.s1 {
   gap: 100px;
 }
 
 .s1-tekst {
-  display: flex;
-  flex-direction: column;
   flex: 1;
+}
+
+.s1-kontakt {
+  display: flex;
+  gap: 30px;
+  color: var(--color9);
+  font-family: "Times New Roman";
 }
 
 .s1-profilowe {
@@ -154,13 +135,6 @@ html {
   box-shadow: 4px 4px 10px var(--color5);
 }
 
-.s1-kontakt {
-  display: flex;
-  gap: 30px;
-  color: var(--color9);
-  font-family: "Times New Roman";
-}
-
 .s1-email {
   color: var(--color9);
   text-decoration: none; /* Usuwa podkreślenie */
@@ -170,9 +144,9 @@ html {
   text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 }
 
-/* ----------------------------strona2-------------------------------------------- */
+/* ----------------------------strona2-doswiadczenie-------------------------------------------- */
 
-.strona2-tlo {
+.s2-tlo {
   padding: 10px 20px 30px;
   height: max-content;
   background-color: var(--color2);
@@ -180,7 +154,7 @@ html {
   align-items: center;
   justify-content: center;
 }
-.strona2 {
+.s2 {
   max-width: 1250px;
   width: 100%;
   display: flex;
