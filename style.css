@@ -5,18 +5,18 @@
 } /* lepiej używać, elementy się nie rozjeżdżają */
 
 :root {
-  --color1: #1d1d33;
-  --color2: #22223b;
-  --color3: #2a2a4a;
+  --color1: #1d1d33; /* najciemniejszy, top-bar jest nim zrobiony */
+  --color2: #22223b; /* ciemny do ciemne tło */
+  --color3: #2a2a4a; /* ciemny do jasne tło */
   --color4: #4a4e69;
-  --color5: #5c6182;
-  --color6: #9a8c98;
+  --color5: #5c6182; /* średnio szary do cieni */
+  --color6: #9a8c98; /* kolor tekstu podczas najeżdżania */
   --color7: #ada1ab;
   --color8: #c9ada7;
-  --color9: #d6c0bc;
+  --color9: #d6c0bc; /* telefon, mail i bordery wszystkich kółek */
   --color10: #f2e9e4;
   --color11: #f7f3f0;
-  --color12: #fcfbfa;
+  --color12: #fcfbfa; /* kolor tekstu */
 
   --max-width: 1250px;
   --transition: 0.3s ease;
