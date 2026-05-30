@@ -106,12 +106,13 @@ html {
 
 .s1-tlo {
   padding-top: 80px;
-  height: 500px;
   background-color: var(--color3);
 }
 
 .s1 {
   gap: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .s1-tekst {
@@ -150,23 +151,13 @@ html {
   padding: 10px 20px 30px;
   height: max-content;
   background-color: var(--color2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
 .s2 {
-  max-width: 1250px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 50px;
 }
 
 .s2-doswiadczenie-calosc {
-  display: flex;
-  flex-direction: column;
   gap: 50px;
 }
 
