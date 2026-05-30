@@ -164,22 +164,18 @@ html {
 }
 
 .s2-doswiadczenie-calosc::before {
-  content: "";
-  position: absolute;
+  content: ""; /* ten pseudoelement musi istnieć, bez tego nic się nie narysuje */
+  position: absolute; /* nie wpływa na inne elementy, można mo ustawiać dowolnie */
   top: 0;
   bottom: 0;
-  left: 350px; /* tu ustawiasz środek logo */
+  left: 348px;
   width: 4px;
   background-color: var(--color9);
 }
 
-/* linia pionowa przechodząca przez środek kolumny ze zdjęciami */
-/* .s2-line {
-  grid-column: 2;
-  width: 4px;
-  background-color: var(--color9);
-  justify-self: center;
-} */
+.s2-doswiadczenie-calosc:last-child::before {
+  bottom: 25%; /* albo np. 0 / 20px */
+}
 
 .s2-logo {
   position: relative;
