@@ -158,27 +158,32 @@ html {
 
 .s2-doswiadczenie-calosc {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 50px;
+  grid-template-columns: 250px 100px 1fr; /* trzy kolumny: data, logo, opis */
   position: relative;
+  gap: 20px 50px; /* 20px row-gap, 50px column-gap */
 }
 
-/* linia pionowa przechodząca przez środek kolumny ze zdjęciami */
 .s2-doswiadczenie-calosc::before {
   content: "";
   position: absolute;
-  left: calc(50% - 2px); /* środek środkowej kolumny - wymaga dopasowania */
   top: 0;
   bottom: 0;
+  left: 350px; /* tu ustawiasz środek logo */
   width: 4px;
   background-color: var(--color9);
-  z-index: 0;
 }
+
+/* linia pionowa przechodząca przez środek kolumny ze zdjęciami */
+/* .s2-line {
+  grid-column: 2;
+  width: 4px;
+  background-color: var(--color9);
+  justify-self: center;
+} */
 
 .s2-logo {
   position: relative;
-  z-index: 1; /* zdjęcie na wierzchu linii */
-  justify-self: center;
+  z-index: 2;
   width: 100px;
   height: 100px;
   border-radius: 50%;
