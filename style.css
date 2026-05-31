@@ -101,31 +101,31 @@ html {
   color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 
-/* ----------------------------strona1-aboutme-------------------------------------------- */
+/* ----------------------------aboutme-------------------------------------------- */
 
-.s1-tlo {
+.aboutme-tlo {
   padding-top: 80px;
   background: linear-gradient(135deg, var(--color3), var(--color2));
 }
 
-.s1 {
+.aboutme {
   gap: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-.s1-tekst {
+.aboutme-tekst {
   flex: 1;
 }
 
-.s1-kontakt {
+.aboutme-kontakt {
   display: flex;
   gap: 30px;
   color: var(--color9);
   font-family: "Times New Roman";
 }
 
-.s1-profilowe {
+.aboutme-profilowe {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -135,12 +135,12 @@ html {
   box-shadow: 4px 4px 10px var(--color5);
 }
 
-.s1-email {
+.aboutme-email {
   color: var(--color9);
   text-decoration: none; /* Usuwa podkreślenie */
 }
 
-.s1-email:hover {
+.aboutme-email:hover {
   text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 }
 
@@ -161,7 +161,7 @@ html {
 
 .timeline-item {
   display: grid; /* każde doświadczenie dzielimy na wiersze, żeby zrobić linię przechodzącą przez loga */
-  grid-template-columns: 200px 200px 1fr;
+  grid-template-columns: 160px 200px 1fr;
 }
 
 .timeline-logo {
@@ -200,26 +200,26 @@ html {
   background: linear-gradient(180deg, var(--color3), var(--color2));
   border: 1px solid var(--color6);
   border-radius: 20px;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .timeline-opis-h3 {
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
 }
 
 .timeline-opis-h4 {
-  margin: 0 0 12px 0;
+  margin: 0 0 8px 0;
   color: var(--color6);
 }
 
-/* ----------------------------strona2-experience-------------------------------------------- */
+/* ----------------------------experience-------------------------------------------- */
 
-.s2-tlo {
+.exp-tlo {
   background-color: var(--color2);
 }
 
-/* ----------------------------strona3-education-------------------------------------------- */
+/* ----------------------------education-------------------------------------------- */
 
-.s3-tlo {
+.edu-tlo {
   background-color: var(--color3);
 }
