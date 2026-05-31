@@ -11,7 +11,7 @@
   --color4: #4a4e69;
   --color5: #5c6182; /* średnio szary do cieni */
   --color6: #9a8c98; /* kolor tekstu podczas najeżdżania i wszystkie bordery */
-  --color7: #ada1ab;
+  --color7: #b3b2b3;
   --color8: #c9ada7;
   --color9: #d6c0bc; /* telefon, mail  */
   --color10: #f2e9e4;
@@ -58,7 +58,6 @@ html {
   transition: color var(--transition);
 }
 
-/* używamy container, żeby nie pisać wszędzie max-width i width - pytanie gdzie zastosować ten container */
 .container {
   max-width: var(--max-width); /* Max 1250px */
   width: 100%; /* 100% na małych ekranach */
@@ -102,7 +101,7 @@ html {
   color: var(--color6); /* Kolor tekstu podczas najeżdżania */
 }
 
-/* ----------------------------strona1-omnie-------------------------------------------- */
+/* ----------------------------strona1-aboutme-------------------------------------------- */
 
 .s1-tlo {
   padding-top: 80px;
@@ -145,26 +144,27 @@ html {
   text-decoration: underline; /* Podkreślenie tekstu po najechaniu */
 }
 
-/* ----------------------------strona2-doswiadczenie-------------------------------------------- */
+/* ----------------------------timeline-------------------------------------------- */
 
-.s2-tlo {
-  background-color: var(--color2);
+.timeline-tlo {
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.timeline {
+  gap: 50px; /* przerwa pomiędzy nagłówkiem, a resztą */
 }
 
-.s2 {
-  gap: 50px;
+.timeline-rows {
+  gap: 20px; /* przerwa między wierszami */
+  width: 100%;
 }
 
-.s2-doswiadczenie-calosc {
-  gap: 20px; /* przerwa pomiędzy nagłówkiem, a resztą */
-}
-
-.s2-doswiadczenie-item {
+.timeline-item {
   display: grid; /* każde doświadczenie dzielimy na wiersze, żeby zrobić linię przechodzącą przez loga */
   grid-template-columns: 200px 200px 1fr;
 }
 
-.s2-logo {
+.timeline-logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -174,13 +174,13 @@ html {
 }
 
 /* wrapper obudowuje img, żeby dało się nimi zarządzać */
-.s2-logo-wrapper {
+.timeline-logo-wrapper {
   display: flex;
   justify-content: center;
   position: relative;
 }
 
-.s2-logo-wrapper::after {
+.timeline-logo-wrapper::after {
   content: ""; /* pseudo-element, który będzie linią przechodzącą przez loga */
   position: absolute; /* pozycjonowanie absolutne względem wrappera */
   height: calc(
@@ -190,13 +190,36 @@ html {
   background-color: var(--color6);
 }
 
-.s2-doswiadczenie-item:last-child .s2-logo-wrapper::after {
+.timeline-item:last-child .timeline-logo-wrapper::after {
   display: none; /* ukrywa linię dla ostatniego elementu, żeby nie wychodziła poza ostatnie logo */
 }
 
-.s2-doswiadczenie-opis {
+.timeline-opis {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, var(--color3), var(--color2));
   border: 1px solid var(--color6);
   border-radius: 20px;
   padding: 20px 30px;
+}
+
+.timeline-opis-h3 {
+  margin: 0 0 8px 0;
+}
+
+.timeline-opis-h4 {
+  margin: 0 0 12px 0;
+  color: var(--color6);
+}
+
+/* ----------------------------strona2-experience-------------------------------------------- */
+
+.s2-tlo {
+  background-color: var(--color2);
+}
+
+/* ----------------------------strona3-education-------------------------------------------- */
+
+.s3-tlo {
+  background-color: var(--color3);
 }
