@@ -13,7 +13,7 @@
   --color6: #9a8c98; /* kolor tekstu podczas najeżdżania i wszystkie bordery */
   --color7: #b3b2b3;
   --color8: #c9ada7;
-  --color9: #d6c0bc; /* telefon, mail  */
+  --color9: #d6c0bc; /* telefon, mail */
   --color10: #f2e9e4;
   --color11: #f7f3f0;
   --color12: #fcfbfa; /* kolor tekstu */
@@ -86,7 +86,7 @@ html {
 /* mówi jak ma wyglądać drugi element paska */
 .top-links {
   gap: 40px;
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .top-logo,
