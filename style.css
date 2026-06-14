@@ -264,3 +264,13 @@ html {
 .skills-grid span {
   margin: 10px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color2);
+  color: var(--color5);
+  font-size: 14px;
+  padding: 10px;
+}
