@@ -225,3 +225,42 @@ html {
 .edu-tlo {
   background-color: var(--color3);
 }
+
+/* ----------------------------skills-------------------------------------------- */
+
+.skills-tlo {
+  background-color: var(--color2);
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+
+.skills {
+  gap: 50px;
+}
+
+.skills-opis {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dwie kolumny o równej szerokości */
+  gap: 100px;
+}
+
+.skills-block {
+  background: linear-gradient(180deg, var(--color3), var(--color2));
+  border: 1px solid var(--color6);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.skills-tytul {
+  display: flex;
+  gap: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.skills-grid span {
+  margin: 10px;
+}
