@@ -248,17 +248,24 @@ html {
   background: linear-gradient(180deg, var(--color3), var(--color2));
   border: 1px solid var(--color6);
   border-radius: 20px;
-  padding: 20px;
+  padding: 25px;
 }
 
 .skills-tytul {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 50px 1fr;
+  padding-left: 20px;
+}
+
+.skills-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-grid span {
@@ -266,11 +273,9 @@ html {
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--color2);
   color: var(--color5);
-  font-size: 14px;
+  font-size: 13px;
   padding: 10px;
+  gap: 20px;
 }
