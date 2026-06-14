@@ -241,19 +241,21 @@ html {
 .skills-opis {
   display: grid;
   grid-template-columns: 1fr 1fr; /* dwie kolumny o równej szerokości */
-  gap: 100px;
+  gap: 70px;
 }
 
 .skills-block {
   background: linear-gradient(180deg, var(--color3), var(--color2));
   border: 1px solid var(--color6);
   border-radius: 20px;
-  padding: 25px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .skills-tytul {
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 
 .skills-grid {
