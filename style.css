@@ -260,6 +260,10 @@ html {
   transition:
     box-shadow var(--transition),
     transform var(--transition);
+  /* te 3 rzeczy poprawiają wydajność animacji */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform;
 }
 
 .skills-item:hover {
@@ -274,6 +278,8 @@ html {
   text-align: center;
   font-size: 13px;
 }
+
+/* ----------------------------footer-------------------------------------------- */
 
 .footer {
   background-color: var(--color2);
