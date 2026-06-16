@@ -238,31 +238,35 @@ html {
   gap: 50px;
 }
 
+.skills-discription {
+  font-size: 14px;
+  text-align: center;
+}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-}
-
-.skills-grid-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.skills-grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .skills-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(180deg, var(--color3), var(--color2));
   height: 140px;
   width: 160px;
   margin: 10px;
   border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  transition:
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.skills-item:hover {
+  border: 2px solid var(--color6);
+  box-shadow: 3px 3px 10px var(--color5);
+  transform: scale(1.05); /* opcjonalne lekkie powiększenie */
+  cursor: pointer;
 }
 
 .skills-text {
