@@ -238,7 +238,7 @@ html {
   gap: 50px;
 }
 
-.skills-discription {
+.skills-description {
   font-size: 14px;
   text-align: center;
 }
@@ -267,10 +267,17 @@ html {
 }
 
 .skills-item:hover {
-  border: 2px solid var(--color6);
+  border: 1.5px solid var(--color6);
   box-shadow: 3px 3px 10px var(--color5);
   transform: scale(1.05); /* opcjonalne lekkie powiększenie */
   cursor: pointer;
+}
+
+/* wygląd wciśniętego kafelka */
+.skills-item.active {
+  border: 1.5px solid var(--color6);
+  box-shadow: 3px 3px 10px var(--color5);
+  transform: scale(1.05);
 }
 
 .skills-text {
