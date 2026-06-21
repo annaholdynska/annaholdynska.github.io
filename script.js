@@ -34,7 +34,8 @@ skillItems.forEach((item) => {
     } else if (lastHoveredItem) {
       description.textContent = lastHoveredItem.dataset.description;
     } else {
-      description.textContent = "Najedź na umiejętność lub kliknij ją.";
+      description.textContent =
+        "To są umiejętności, które nabyłam podczas studiów i pracy elo.";
     }
   });
 
@@ -42,7 +43,8 @@ skillItems.forEach((item) => {
     if (selectedItem) {
       description.textContent = selectedItem.dataset.description;
     } else {
-      description.textContent = "Najedź na umiejętność lub kliknij ją.";
+      description.textContent =
+        "To są umiejętności, które nabyłam podczas studiów i pracy elo.";
     }
   });
 
