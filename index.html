@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pl">
   <head>
+    <script src="script.js" defer></script>
+    <!-- defer powoduje, że skrypt zostanie załadowany po wczytaniu całego dokumentu -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Anna Hołdyńska</title>
@@ -204,9 +206,8 @@
     <div class="skills-tlo flex-center">
       <div class="skills container flex-col flex-center">
         <div><h1>Umiejętności</h1></div>
-        <span id="skill-description" class="skills-description">
+        <span id="skill-description" class="skills-description flex-center">
           <!-- id pozwala znaleźć ten element w JavaScriptie -->
-          Najedź na umiejętność lub kliknij ją.
         </span>
         <!-- prettier-ignore -->
         <div class="skills-grid">
@@ -261,7 +262,7 @@
         </div>
       </div>
     </div>
-
+    <!---------------------------------------------- Footer ---------------------------------------------->
     <footer class="footer flex-center">
       <span> © 2026 Moje Portfolio </span>
       <span>

@@ -239,6 +239,7 @@ html {
 }
 
 .skills-description {
+  min-height: 60px;
   font-size: 14px;
   text-align: center;
 }
@@ -253,31 +254,30 @@ html {
   align-items: center;
   justify-content: center;
   background: linear-gradient(180deg, var(--color3), var(--color2));
+  border: 1.5px solid transparent;
   height: 140px;
   width: 160px;
   margin: 10px;
   border-radius: 20px;
-  transition:
-    box-shadow var(--transition),
-    transform var(--transition);
+  transition: all var(--transition);
   /* te 3 rzeczy poprawiają wydajność animacji */
   transform: translateZ(0);
   backface-visibility: hidden;
   will-change: transform;
 }
 
+/* wygląd wciśniętego kafelka */
 .skills-item:hover {
   border: 1.5px solid var(--color6);
   box-shadow: 3px 3px 10px var(--color5);
-  transform: scale(1.05); /* opcjonalne lekkie powiększenie */
   cursor: pointer;
 }
 
-/* wygląd wciśniętego kafelka */
-.skills-item.active {
-  border: 1.5px solid var(--color6);
+.skills-item.selected {
+  border: 1.5px solid var(--color8);
   box-shadow: 3px 3px 10px var(--color5);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .skills-text {
