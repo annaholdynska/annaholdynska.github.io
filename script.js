@@ -1,3 +1,6 @@
+// będziemy obsługiwać grida klocków umiejętności
+const skillsGrid = document.querySelector(".skills-grid");
+
 // przypisujemy do zmiennej description element o id "skill-description"
 const description = document.getElementById("skill-description");
 
@@ -6,6 +9,7 @@ const skillItems = document.querySelectorAll(".skills-item");
 
 // przechowuje aktualnie kliknięty klocek
 let selectedItem = null;
+let lastHoveredItem = null;
 
 // przechodzi po wszystkich klockach
 skillItems.forEach((item) => {
@@ -20,15 +24,24 @@ skillItems.forEach((item) => {
 
     // wstawia opis do elementu na górze
     description.textContent = text;
+    lastHoveredItem = item;
   });
 
   // reakcja na zjechanie myszką
   item.addEventListener("mouseleave", () => {
     if (selectedItem) {
-      // pokazuje opis wybranego klocka
+      description.textContent = selectedItem.dataset.description;
+    } else if (lastHoveredItem) {
+      description.textContent = lastHoveredItem.dataset.description;
+    } else {
+      description.textContent = "Najedź na umiejętność lub kliknij ją.";
+    }
+  });
+
+  skillsGrid.addEventListener("mouseleave", () => {
+    if (selectedItem) {
       description.textContent = selectedItem.dataset.description;
     } else {
-      // gdy nic nie jest wybrane
       description.textContent = "Najedź na umiejętność lub kliknij ją.";
     }
   });
