@@ -36,10 +36,10 @@ skillItems.forEach((item) => {
     lastHoveredItem = item;
   });
 
-  // tu skończyliśmy xd
+  // ---------------------------------- reakcja na zjechanie myszką ----------------------------------
 
-  // reakcja na zjechanie myszką
   item.addEventListener("mouseleave", () => {
+    //
     if (selectedItem) {
       description.textContent = selectedItem.dataset.description;
     } else if (lastHoveredItem) {
@@ -61,6 +61,7 @@ skillItems.forEach((item) => {
 
   // reakcja na kliknięcie
   item.addEventListener("click", () => {
+    // === to jest ścisłe przyrównanie - czy te dwie rzeczy są dokładnie takie same, = to jest zapisanie do zmiennej
     if (selectedItem === item) {
       // jeśli kliknięty klocek jest już aktywny, to go odznaczamy
       item.classList.remove("selected");
