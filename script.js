@@ -9,6 +9,9 @@ const description = document.getElementById("skill-description");
 // szuka wszystkich elementów z klasą .skills-item i przypisuje do zmiennej, po to żeby każdemu z nich dodać click itp.
 const skillItems = document.querySelectorAll(".skills-item");
 
+// pobiera main tekst (główny opis z umiejętności)
+const mainText = document.getElementById("skill-description").textContent;
+
 // let = zmienna, której można zmieniać wartość (let selectedItem = null - to jest początkowa wartość zmiennej), const = zmienna, której nie można zmieniać
 
 // przechowuje aktualnie kliknięty klocek - jest po to, żeby pamiętać, co użytkownik wybrał
@@ -38,49 +41,51 @@ skillItems.forEach((item) => {
 
   // ---------------------------------- reakcja na zjechanie myszką ----------------------------------
 
+  // mouseleave dla klocka
   item.addEventListener("mouseleave", () => {
-    //
+    // if (selectedItem) = gdy element istnieje to... gdy klocek jest wciśnięty
     if (selectedItem) {
+      // to opis mi zostać taki jak wciśniętego klocka
       description.textContent = selectedItem.dataset.description;
     } else if (lastHoveredItem) {
       description.textContent = lastHoveredItem.dataset.description;
     } else {
-      description.textContent =
-        "To są umiejętności, które nabyłam podczas studiów i pracy elo.";
+      description.textContent = mainText;
     }
   });
 
+  //mouseleave dla grida
   skillsGrid.addEventListener("mouseleave", () => {
     if (selectedItem) {
       description.textContent = selectedItem.dataset.description;
     } else {
-      description.textContent =
-        "To są umiejętności, które nabyłam podczas studiów i pracy elo.";
+      description.textContent = mainText;
     }
   });
 
-  // reakcja na kliknięcie
+  // ---------------------------------- reakcja na kliknięcie myszką ----------------------------------
+
   item.addEventListener("click", () => {
     // === to jest ścisłe przyrównanie - czy te dwie rzeczy są dokładnie takie same, = to jest zapisanie do zmiennej
     if (selectedItem === item) {
-      // jeśli kliknięty klocek jest już aktywny, to go odznaczamy
+      // jeśli kliknięty klocek jest kliknięty, to go odznaczamy
       item.classList.remove("selected");
       selectedItem = null;
       return; // zakończ funkcję
     }
 
-    // usuwa selected ze wszystkich klocków
+    // usuwa wygląd wciśniętego klocka (selected) ze wszystkich innych klocków
     skillItems.forEach((el) => {
       el.classList.remove("selected");
     });
 
-    // dodaje selected klikniętemu klockowi
+    // dodaje wygląd selected klikniętemu klockowi
     item.classList.add("selected");
 
-    // zapisuje kliknięty klocek
+    // tu zapisuje, że ten klocek (item), który wybraliśmy to jest ten klocek selectedItem
     selectedItem = item;
 
-    // ustawia jego opis
+    // ustawia opis dla wciśniętego klocka
     description.textContent = item.dataset.description;
   });
 });
